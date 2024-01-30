@@ -5,24 +5,23 @@ const {
   createPatient,
   deletePatient,
   updatePatient,
-} = require("../controllers/workoutController");
-const { get } = require("mongoose");
+} = require("../controllers/patientController");
 
 const router = express.Router();
 
-// GET all workouts
+// GET all patients
 router.get("/", getPatients);
 
-// GET a single workout
+// GET a single patient
 router.get("/:id", getPatient);
 
-// POST a new workout
+// POST a new patient
 router.post("/", createPatient);
 
-// DELETE a workout
+// DELETE a patient
 router.delete("/:id", deletePatient);
 
-// UPDATE a workout
+// UPDATE a patient
 router.patch("/:id", updatePatient);
 
 module.exports = router;
