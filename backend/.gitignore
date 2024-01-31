@@ -1,0 +1,3 @@
+# Ignore backend-specific files or build artifacts
+.env
+*.log

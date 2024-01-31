@@ -1,0 +1,3 @@
+# Ignore frontend-specific files or build artifacts
+build/
+.cache/
