@@ -2,8 +2,8 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="App">
-      <h1>Home</h1>
+    <div>
+      <h1 className="text-5xl">Home</h1>
     </div>
   );
 }

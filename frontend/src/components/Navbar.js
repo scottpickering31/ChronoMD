@@ -4,9 +4,9 @@ import React from "react";
 function Navbar() {
   return (
     <header>
-      <div className="container">
+      <div className="flex items-center justify-between p-4">
         <Link to="/">
-          <h1>Chrono MD</h1>
+          <h1 className="text-5xl">Chrono MD</h1>
         </Link>
       </div>
     </header>
