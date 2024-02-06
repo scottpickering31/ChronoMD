@@ -24,4 +24,8 @@ router.delete("/:id", deletePatient);
 // UPDATE a patient
 router.patch("/:id", updatePatient);
 
+router.all("*", (req, res) => {
+  res.status(404).send("Not found");
+});
+
 module.exports = router;
