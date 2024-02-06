@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const patientData = new Schema({
+const patientDataSchema = new Schema({
   firstName: String,
   lastName: String,
   age: Number,
@@ -14,7 +14,7 @@ const patientData = new Schema({
   doctor: String,
 });
 
-const userData = new Schema({
+const userDataSchema = new Schema({
   firstName: String,
   lastName: String,
   username: String,
@@ -22,4 +22,12 @@ const userData = new Schema({
   email: String,
 });
 
-module.exports = mongoose.model("Patient", patientData);
+// Create models from the schemas
+const Patient = mongoose.model("Patient", patientDataSchema);
+const User = mongoose.model("User", userDataSchema);
+
+// Export the models
+module.exports = {
+  Patient,
+  User,
+};

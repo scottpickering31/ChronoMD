@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 
 // routes
 
-app.use("/v1/api/patients", patientData);
+app.use("/api/v1/patients", patientData);
 
 // connect to db
 
