@@ -2,12 +2,37 @@ import React from "react";
 
 function Sidebar() {
   return (
-    <div className="h-screen w-1/12 z-10 bg-slate-500 flex justify-around items-center flex-col ">
-      <h1>Setting1</h1>
-      <h1>Setting2</h1>
-      <h1>Setting3</h1>
-      <h1>Setting4</h1>
-      <h1>Setting5</h1>
+    <div className="w-1/12 absolute top-0 -z-10 left-0 h-screen bg-slate-100 flex justify-evenly items-center flex-col ">
+      <div>
+        <h1>Setting1Header</h1>
+        <h2>Setting1</h2>
+        <h2>Setting2</h2>
+      </div>
+      <div>
+        <h1>Setting2Header</h1>
+        <h2>Setting1</h2>
+        <h2>Setting2</h2>
+      </div>
+      <div>
+        <h1>Setting3Header</h1>
+        <h2>Setting1</h2>
+        <h2>Setting2</h2>
+      </div>
+      <div>
+        <h1>Setting4Header</h1>
+        <h2>Setting1</h2>
+        <h2>Setting2</h2>
+      </div>
+      <div>
+        <h1>Setting5Header</h1>
+        <h2>Setting1</h2>
+        <h2>Setting2</h2>
+      </div>
+      <div>
+        <h1>Setting6Header</h1>
+        <h2>Setting1</h2>
+        <h2>Setting2</h2>
+      </div>
     </div>
   );
 }
