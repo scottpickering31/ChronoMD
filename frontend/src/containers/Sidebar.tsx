@@ -2,7 +2,7 @@ import React from "react";
 
 function Sidebar() {
   return (
-    <div className="h-screen w-1/6 z-10 bg-slate-500 flex justify-around items-center flex-col ">
+    <div className="h-screen w-1/12 z-10 bg-slate-500 flex justify-around items-center flex-col ">
       <h1>Setting1</h1>
       <h1>Setting2</h1>
       <h1>Setting3</h1>
