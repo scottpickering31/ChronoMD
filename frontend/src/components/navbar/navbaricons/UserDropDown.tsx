@@ -2,7 +2,7 @@ import React from "react";
 
 function UserDropDown() {
   return (
-    <div>
+    <div className="w-full bg-white p-3 rounded-full">
       <h1>UserDropDown</h1>
     </div>
   );

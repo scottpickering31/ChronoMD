@@ -1,10 +1,10 @@
 import React from "react";
-import MagnifyingGlass from "../../assets/svg/MagnifyingGlass";
+import MagnifyingGlass from "../searchbar/MagnifyingGlass";
 
 function NavSearchBar() {
   return (
     <div className="flex flex-row">
-      <div className="mr-10">
+      <div className="mr-2">
         <MagnifyingGlass />
       </div>
       <div>
