@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import React from "react";
-import UserDropDown from "../components/Navbar/UserDropDown";
-import NavSearchBar from "../components/Navbar/NavSearchBar";
+import UserDropDown from "../components/navbar/UserDropDown";
+import NavSearchBar from "../components/navbar/NavSearchBar";
 
 function Navbar() {
   return (

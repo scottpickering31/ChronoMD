@@ -5,7 +5,7 @@ import Sidebar from "./containers/Sidebar";
 import LandingPage from "./pages/landingpage/LandingPage";
 
 function App() {
-  const [loggedIn, setLoggedIn] = React.useState(false);
+  const [loggedIn, setLoggedIn] = React.useState(true);
 
   return (
     <div>
