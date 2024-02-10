@@ -23,6 +23,9 @@ export default {
         extral: "125vh",
         tariff: "6.5rem",
       },
+      width: {
+        tiny: "10%",
+      },
       colors: {
         customOrange: {
           DEFAULT: "rgb(249, 115, 22)",

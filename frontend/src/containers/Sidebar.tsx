@@ -2,7 +2,7 @@ import React from "react";
 
 function Sidebar() {
   return (
-    <div className="w-1/12 absolute top-0 -z-10 left-0 h-screen bg-slate-100 flex justify-evenly items-center flex-col ">
+    <div className="w-tiny absolute overflow-y-scroll top-0 -z-10 left-0 h-screen bg-slate-100 flex justify-evenly flex-col text-center">
       <div>
         <h1>Setting1Header</h1>
         <h2>Setting1</h2>
