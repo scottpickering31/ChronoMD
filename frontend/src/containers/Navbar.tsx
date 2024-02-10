@@ -32,14 +32,16 @@ function Navbar() {
           <div>
             <SettingsTab />
           </div>
-          <div className="flex flex-row items-center mx-5 gap-5">
-            <div>
-              <SignInTab />
+          {!loggedIn && (
+            <div className="flex flex-row items-center mx-5 gap-5">
+              <div>
+                <SignInTab />
+              </div>
+              <div>
+                <SignUpTab />
+              </div>
             </div>
-            <div>
-              <SignUpTab />
-            </div>
-          </div>
+          )}
           {loggedIn && (
             <div className="flex justify-end cursor-pointer mr-5">
               <UserDropDown />

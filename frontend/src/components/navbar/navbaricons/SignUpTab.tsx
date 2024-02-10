@@ -10,7 +10,7 @@ function SignUpTab() {
     !isLoggedIn && (
       <div
         onClick={() => dispatch(loggedIn())}
-        className="cursor-pointer font-bold text-xl bg-green-500 p-2 px-5 rounded-full"
+        className="cursor-pointer font-bold text-xl bg-green-500 p-3 px-5 rounded-full"
       >
         <h1>Sign Up</h1>
       </div>

@@ -5,9 +5,10 @@
     "jsx": "react",
     "module": "commonjs",
     "esModuleInterop": true,
-    // "strict": true,
+    "strict": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+    "noEmit": false,
     "allowImportingTsExtensions": true
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/assets/svgs/*.d.ts"],

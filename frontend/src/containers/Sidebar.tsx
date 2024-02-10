@@ -28,11 +28,6 @@ function Sidebar() {
         <h2>Setting1</h2>
         <h2>Setting2</h2>
       </div>
-      <div>
-        <h1>Setting6Header</h1>
-        <h2>Setting1</h2>
-        <h2>Setting2</h2>
-      </div>
     </div>
   );
 }
