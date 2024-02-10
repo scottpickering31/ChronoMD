@@ -6,11 +6,10 @@ import NavSearchBar from "../components/navbar/searchbar/NavSearchBar";
 import SettingsTab from "../components/navbar/navbaricons/SettingsTab";
 import SignInTab from "../components/navbar/navbaricons/SignInTab";
 import SignUpTab from "../components/navbar/navbaricons/SignUpTab";
-import { useDispatch, useSelector } from "react-redux";
-import { RootState, AppDispatch } from "../state/store/store";
+import { useSelector } from "react-redux";
+import { RootState } from "../state/store/store";
 
 function Navbar() {
-  const dispatch = useDispatch<AppDispatch>();
   const loggedIn = useSelector((state: RootState) => state.loggedIn.value);
   return (
     <header className="bg-slate-100 border border-bottom shadow-lg">

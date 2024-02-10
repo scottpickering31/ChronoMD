@@ -8,7 +8,11 @@ function NavSearchBar() {
         <MagnifyingGlass />
       </div>
       <div>
-        <input type="text" placeholder="Search" className="rounded-full p-2" />
+        <input
+          type="text"
+          placeholder="Search"
+          className="rounded-full p-2 w-80"
+        />
       </div>
     </div>
   );
