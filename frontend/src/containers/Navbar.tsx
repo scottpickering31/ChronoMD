@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
-import { Routes, Route } from "react-router-dom";
-import React from "react";
+  import React from "react";
 import UserDropDown from "../components/navbar/navbaricons/UserDropDown";
 import NavSearchBar from "../components/navbar/searchbar/NavSearchBar";
 import SettingsTab from "../components/navbar/navbaricons/SettingsTab";
@@ -11,18 +9,12 @@ import { RootState } from "../state/store/store";
 
 function Navbar() {
   const loggedIn = useSelector((state: RootState) => state.loggedIn.value);
+
   return (
     <header className="bg-slate-100 border border-bottom shadow-lg">
       <div className="flex flex-row justify-between items-center my-2 w-full mx-5">
         <div>
-          <Link to="/">
-            <Routes>
-              <Route
-                path="/"
-                element={<h1 className="text-xl">Chrono MD</h1>}
-              />
-            </Routes>
-          </Link>
+          <h1 className="text-xl">Chrono MD</h1>
         </div>
         <div>
           <NavSearchBar />

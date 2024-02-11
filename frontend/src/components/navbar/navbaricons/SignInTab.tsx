@@ -1,18 +1,13 @@
 import React from "react";
-import { RootState, AppDispatch } from "../../../state/store/store";
-import { useDispatch, useSelector } from "react-redux";
-import { loggedIn } from "../../../state/reducers/LoggedInSlice";
+import { Link } from "react-router-dom";
 
 function SignInTab() {
-  const dispatch = useDispatch<AppDispatch>();
-  const isLoggedIn = useSelector((state: RootState) => state.loggedIn.value);
-
   return (
-    !isLoggedIn && (
+    <Link to="/account/login">
       <div className="cursor-pointer underline underline-offset-8 text-xl">
-        <h1 onClick={() => dispatch(loggedIn())}>Sign In</h1>
+        <h1>Sign In</h1>
       </div>
-    )
+    </Link>
   );
 }
 

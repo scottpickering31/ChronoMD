@@ -1,11 +1,13 @@
 import React from "react";
+import Navbar from "../containers/Navbar.tsx";
 
-function UserProfile() {
+function Home() {
   return (
     <div>
-      <h1>UserProfile</h1>
+      <Navbar />
+      <h1>Home</h1>
     </div>
   );
 }
 
-export default UserProfile;
+export default Home;
