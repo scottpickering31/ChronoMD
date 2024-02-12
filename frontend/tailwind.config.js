@@ -12,7 +12,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/images/ChronoMD-test.jpg')",
+        "hero-pattern": "url('/public/images/ChronoMD-background.jpg')",
         // 'footer-texture': "url('/img/footer-texture.png')",
       },
       backgroundSize: {

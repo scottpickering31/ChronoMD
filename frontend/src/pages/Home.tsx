@@ -4,8 +4,12 @@ import Navbar from "../containers/Navbar.tsx";
 function Home() {
   return (
     <div>
-      <Navbar />
-      <h1>Home</h1>
+      <div className="fixed w-full">
+        <Navbar />
+      </div>
+      <div>
+        <h1>Home</h1>
+      </div>
     </div>
   );
 }

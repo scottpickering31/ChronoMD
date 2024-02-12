@@ -1,11 +1,11 @@
 import React from "react";
 
-interface MagnifyingGlass {
+interface MagnifyingGlassProps {
   className?: string;
 }
-const MagnifyingGlass: React.FC<MagnifyingGlass> = ({
+const MagnifyingGlass: React.FC<MagnifyingGlassProps> = ({
   className = "",
-}: MagnifyingGlass) => {
+}: MagnifyingGlassProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

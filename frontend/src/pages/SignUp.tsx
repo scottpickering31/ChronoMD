@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 
 export default function App() {
   const {
@@ -12,14 +13,11 @@ export default function App() {
 
   return (
     <div className="bg-hero-pattern bg-no-repeat bg-cover bg-local h-extral">
-      <div className="flex justify-end mr-40 ">
+      <div className="flex justify-end mr-24">
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col px-14 py-4 text-xl w-1/3 rounded-3xl bg-white shadow-lg mt-5 "
+          className="flex flex-col px-14 py-4 text-xl w-2/5 rounded-3xl bg-white shadow-lg mt-5 "
         >
-          <h1 className="text-center mb-12 text-3xl underline underline-offset-8 ">
-            Sign Up
-          </h1>
           <h2 className="text-xl mb-8 text-center">
             See what ChronoMD has to offer
           </h2>
@@ -27,6 +25,7 @@ export default function App() {
             <img
               src="https://img.icons8.com/color/48/000000/google-logo.png"
               className="h-8 w-8"
+              alt="Google logo"
             />
             <h3>Sign up with Google</h3>
           </div>
@@ -81,7 +80,7 @@ export default function App() {
           />
 
           {errors["Password"] && (
-            <p className="text-red-500 text-base">
+            <p className="text-red-500 text-sm">
               Password is required (Min Length: 8 Characters)
             </p>
           )}
@@ -108,20 +107,28 @@ export default function App() {
             />
             <p>
               I agree to the
-              <strong className="cursor-pointer"> Terms of Service</strong> and
-              <strong className="cursor-pointer"> Privacy Policy</strong>.
+              <Link to="/terms-of-service">
+                <strong className="cursor-pointer"> Terms of Service</strong>
+              </Link>{" "}
+              and
+              <Link to="/privacy-policy">
+                <strong className="cursor-pointer"> Privacy Policy</strong>
+              </Link>
+              .
             </p>
           </div>
 
           <input
             type="submit"
-            className="cursor-pointer bg-black text-white mb-4 py-3 hover:rounded-full"
+            className="cursor-pointer bg-black text-white mb-8 py-3 hover:rounded-full"
             value="Sign Up"
           />
 
           <p className="text-base text-center">
             Already have an account?
-            <strong className="cursor-pointer"> Sign In</strong>
+            <Link to="/account/login">
+              <strong className="cursor-pointer"> Sign In</strong>
+            </Link>
           </p>
         </form>
       </div>
