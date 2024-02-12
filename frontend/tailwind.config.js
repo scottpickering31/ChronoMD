@@ -11,6 +11,10 @@ export default {
       widescreen: "1440px",
     },
     extend: {
+      backgroundImage: {
+        "hero-pattern": "url('/src/assets/images/ChronoMD-test.jpg')",
+        // 'footer-texture': "url('/img/footer-texture.png')",
+      },
       backgroundSize: {
         "50%": "50%",
         16: "4rem",
