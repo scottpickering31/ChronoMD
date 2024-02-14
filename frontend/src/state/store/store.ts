@@ -4,6 +4,7 @@ import loggedInSlice from "../reducers/LoggedInSlice";
 export const store = configureStore({
   reducer: {
     loggedIn: loggedInSlice,
+    setLoggedIn: loggedInSlice,
   },
 });
 

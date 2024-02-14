@@ -11,6 +11,7 @@ import ErrorPage from "./pages/ErrorPage";
 import Dashboard from "./pages/Dashboard";
 import TermsOfService from "./pages/TermsOfService";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import AccountPage from "./pages/AccountPage";
 
 const router = createBrowserRouter([
   {
@@ -38,13 +39,17 @@ const router = createBrowserRouter([
     path: "/privacy-policy",
     element: <PrivacyPolicy />,
   },
+  {
+    path: "/account/settings",
+    element: <AccountPage />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
+  document.getElementById("root") as HTMLElement,
 );
 root.render(
   <Provider store={store}>
     <RouterProvider router={router} />
-  </Provider>
+  </Provider>,
 );

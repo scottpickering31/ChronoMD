@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface LoggedInState {
   value: boolean;
@@ -15,8 +15,11 @@ const loggedInSlice = createSlice({
     loggedIn: (state) => {
       state.value = !state.value;
     },
+    setLoggedIn: (state, action: PayloadAction<boolean>) => {
+      state.value = action.payload;
+    },
   },
 });
 
-export const { loggedIn } = loggedInSlice.actions;
+export const { loggedIn, setLoggedIn } = loggedInSlice.actions;
 export default loggedInSlice.reducer;
